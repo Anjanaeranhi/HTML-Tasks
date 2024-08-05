@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 2fr;
+            grid-template-areas: "one one one" "two three five" "four four four";
+        }
+        .main{
+            
+            border: 2px solid;
+        }
+        .fir{
+            background-color: aqua;
+            grid-area: one;
+        }
+        .sec{
+            background-color: blueviolet;
+            grid-area: two;
+        }
+        .thi{
+            background-color: chocolate;
+            grid-area: three;
+        }
+        .fou{
+            background-color: crimson;
+            grid-area: four;
+        }
+        .fiv{
+            background-color: bisque;
+            grid-area: five;
+        }
+    </style> 
+</head>
+<body>
+    <div class="container">
+        <div class="main fir">A grid is a collection of horizontal and vertical lines creating a pattern against which we can line up our design elements. They help us to create layouts in which our elements won't jump around or change width as we move from page to page, providing greater consistency on our websites.</div>
+        <div class="main sec">Having decided on the grid that your design needs, you can use CSS grid layout to create it. We'll look at the basic features of grid layout first and then explore how to create a simple grid system for your project. The following video provides a nice visual explanation of using CSS grid:</div>
+        <div class="main thi">Having decided on the grid that your design needs, you can use CSS grid layout to create it. We'll look at the basic features of grid layout first and then explore how to create a simple grid system for your project. The following video provides a nice visual explanation of using CSS grid:</div>
+        <div class="main fou">Having decided on the grid that your design needs, you can use CSS grid layout to create it. We'll look at the basic features of grid layout first and then explore how to create a simple grid system for your project. The following video provides a nice visual explanation of using CSS grid:</div>
+        <div class="main fiv">Having decided on the grid that your design needs, you can use CSS grid layout to create it. We'll look at the basic features of grid layout first and then explore how to create a simple grid system for your project. The following video provides a nice visual explanation of using CSS grid:</div>
+    </div>
+</body>
+</html>

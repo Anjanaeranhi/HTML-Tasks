@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 20px;
+        }
+        .x{
+            background-color: rgb(105, 94, 94);
+            color: black;
+            padding: 10px;
+            text-align: center;
+            
+        }
+        @media screen and (max-width: 400px){
+            .grid{
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4,1fr);
+            }
+            body{
+                background-color: aqua;   
+            }
+            .y{
+                display: none;
+            }
+        }
+        @media screen and (min-width: 400px) and (max-width: 600px){
+            body{
+                background-color: aquamarine;
+            }
+            .grid{
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: 1fr 1fr;
+            }
+            .y{
+                display: none;
+            }
+        }
+        @media screen and (min-width: 600px) and (max-width: 750px){
+            body{
+                background-color: rgb(150, 209, 189);
+            }
+            .grid{
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: 1fr 1fr;
+            }
+        }
+        @media screen and (min-width: 750px) and (max-width: 900px){
+            body{
+                background-color: azure;
+            }
+            .grid{
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: 1fr 1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <p class="y">It is a grid based problem</p>
+    <div></div>
+    <div class="grid">
+        <div class="x">Item 1</div>
+        <div class="x">Item 2</div>
+        <div class="x">Item 3</div>
+        <div class="x">Item 4</div>
+    </div>
+    <p>This is a paragraph of the problem to be solved</p>
+</body>
+</html>
